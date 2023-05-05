@@ -1,1 +1,2 @@
-# Repositorio de trabajo del TFG de Víctor de la Torre Rosa
+# Repositorio de trabajo del TFG
+# Víctor de la Torre Rosa
