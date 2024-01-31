@@ -172,6 +172,11 @@ def get_features(file):
         mfc_coefficients = feature_mfcc(waveform, sample_rate)
 
         feature_matrix=np.array([])
+
+        print("Chromagram shape:", chromagram.shape)
+        print("Melspectrogram shape:", melspectrogram.shape)
+        print("MFC coefficients shape:", mfc_coefficients.shape)
+
         # use np.hstack to stack our feature arrays horizontally to create a feature matrix
         feature_matrix = np.hstack((chromagram, melspectrogram, mfc_coefficients))#180 features in total
         #print(feature_matrix)
@@ -199,7 +204,7 @@ def load_data():
             #raise ValueError(
 #ValueError: y has only 1 sample in class gira a la derecha, covariance is ill defined.
 #es decir, tiene que haber como minimo mas de una muestra de cada clase ya que sino la covarianza es 0
-        print('\r' + f' Processed {count}/{480} audio samples',end=' ')
+        print('\r' + f' Processed {count}/{720} audio samples',end=' ')
     # Return arrays to plug into sklearn's cross-validation algorithms
     return np.array(X), np.array(y)
 
@@ -399,7 +404,7 @@ print(f'Test Set F-score score =  {100*f1_score(y_test, y_pred, average="macro")
 joblib.dump(model, 'modelo_mlp_entrenado.pkl')
 loaded_model = joblib.load('modelo_mlp_entrenado.pkl')
 
-audio_path_prueba = '/home/victor/Escritorio/tfg/tests/audios/WAV/prueba_fold/musica_baby.wav'
+audio_path_prueba = '/home/victor/Escritorio/tfg/tests/audios/WAV/prueba_fold/delante_rasp_45-.wav'
 audio_prueba = get_features(audio_path_prueba)
 
 audio_prueba = audio_prueba.reshape(1, -1)
@@ -434,7 +439,7 @@ confmatrix_df = pd.DataFrame(conf_matrix, index=direction_name, columns=directio
 confmatrix_df_norm = pd.DataFrame(conf_matrix_norm, index=direction_name, columns=direction_name)
 
 # plot confusion matrices
-
+'''
 plt.figure(figsize=(16,6))
 sn.set(font_scale=1.8) # direction label and title size
 plt.subplot(1,2,1)
@@ -444,4 +449,4 @@ plt.subplot(1,2,2)
 plt.title('Normalized Confusion Matrix')
 sn.heatmap(confmatrix_df_norm, annot=True, annot_kws={"size": 13}) #annot_kws is value font
 
-#plt.show()
+plt.show()'''
