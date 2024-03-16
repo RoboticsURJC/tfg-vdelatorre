@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 import RPi.GPIO as GPIO
 import time
+
+enb = 23
+out1 = 17 #right coil MARRON
+out2 = 18 #right coil BLANCO
+out3 = 27 # left coil NEGRO
+out4 = 22 # left coil ROJO
  
-out1 = 17
-out2 = 18
-out3 = 27
-out4 = 22
- 
-# careful lowering this, at some point you run into the mechanical limitation of how quick your motor can move
-step_sleep = 0.002
- 
-step_count = 500
+DEG_PER_STEP = 1.195
+STEP_PER_REVOLUTION = int(360 / DEG_PER_STEP)
+
+#delay btw steps
+delay = 0.002
 
 #500 steps for 180 degrees
 
@@ -19,10 +21,12 @@ GPIO.setwarnings(False)
  
 # setting up
 GPIO.setmode( GPIO.BCM )
-GPIO.setup( out1, GPIO.OUT )
-GPIO.setup( out2, GPIO.OUT )
-GPIO.setup( out3, GPIO.OUT )
-GPIO.setup( out4, GPIO.OUT )
+GPIO.setup( [out1,out2,out3,out4,enb], GPIO.OUT )
+
+
+p = GPIO.PWM(enb,100)
+p.start(90)
+
  
 # initializing
 GPIO.output( out1, GPIO.LOW )
@@ -32,17 +36,45 @@ GPIO.output( out4, GPIO.LOW )
  
  
 def cleanup():
-    GPIO.output( out1, GPIO.LOW )
-    GPIO.output( out2, GPIO.LOW )
-    GPIO.output( out3, GPIO.LOW )
-    GPIO.output( out4, GPIO.LOW )
+    #enb??
+    GPIO.output( [out1,out2,out3,out4], GPIO.LOW )
     GPIO.cleanup()
- 
- 
+    
+   
+def move_cw():
+    for _ in range(STEP_PER_REVOLUTION):
+        GPIO.output( [out1,out2,out3,out4], [GPIO.LOW,GPIO.LOW,GPIO.LOW,GPIO.HIGH] )
+        time.sleep(delay)
+        GPIO.output( [out1,out2,out3,out4], [GPIO.LOW,GPIO.HIGH,GPIO.LOW,GPIO.LOW] )
+        time.sleep(delay)
+        GPIO.output( [out1,out2,out3,out4], [GPIO.LOW,GPIO.LOW,GPIO.HIGH,GPIO.LOW] )
+        time.sleep(delay)
+        GPIO.output( [out1,out2,out3,out4], [GPIO.HIGH,GPIO.LOW,GPIO.LOW,GPIO.LOW] )
+        time.sleep(delay)
+    
+
+def move_ccw():
+    for _ in range(STEP_PER_REVOLUTION):
+        GPIO.output( [out1,out2,out3,out4], [GPIO.HIGH,GPIO.LOW,GPIO.LOW,GPIO.LOW] )
+        time.sleep(delay)
+        GPIO.output( [out1,out2,out3,out4], [GPIO.LOW,GPIO.LOW,GPIO.HIGH,GPIO.LOW] )
+        time.sleep(delay)
+        GPIO.output( [out1,out2,out3,out4], [GPIO.LOW,GPIO.HIGH,GPIO.LOW,GPIO.LOW] )
+        time.sleep(delay)
+        GPIO.output( [out1,out2,out3,out4], [GPIO.LOW,GPIO.LOW,GPIO.LOW,GPIO.HIGH] )
+        time.sleep(delay)
+    
+    
+move_cw()
+
+p.ChangeDutyCycle(60)
+time.sleep(1)
+move_ccw()    
+'''
 # the meat
 try:
     i = 0
-    for i in range(step_count):
+    for i in range(500):
         if i%4==0:
             GPIO.output( out4, GPIO.HIGH )
             GPIO.output( out3, GPIO.LOW )
@@ -64,11 +96,12 @@ try:
             GPIO.output( out2, GPIO.LOW )
             GPIO.output( out1, GPIO.HIGH )
  
-        time.sleep( step_sleep )
+        time.sleep( delay )
  
 except KeyboardInterrupt:
     cleanup()
     exit( 1 )
+'''
  
 cleanup()
 exit( 0 )
