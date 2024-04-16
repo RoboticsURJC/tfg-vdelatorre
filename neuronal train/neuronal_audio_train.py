@@ -7,7 +7,7 @@ import os
 # matplotlib complains about the behaviour of librosa.display, so we'll ignore those warnings:
 import warnings; warnings.filterwarnings('ignore')
 from IPython.core.display import HTML
-from matplotlib.colors import Normalize
+#from matplotlib.colors import Normalize
 import librosa
 import os, glob
 from sklearn.preprocessing import StandardScaler

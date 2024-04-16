@@ -1,30 +1,10 @@
-import matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
-import librosa.display
 import soundfile
-import os
 # matplotlib complains about the behaviour of librosa.display, so we'll ignore those warnings:
-import warnings; warnings.filterwarnings('ignore')
-from IPython.core.display import HTML
-from matplotlib.colors import Normalize
+#import warnings; warnings.filterwarnings('ignore')
 import librosa
-import os, glob
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
+
 import joblib
-from sklearn.metrics import confusion_matrix
-import seaborn as sn # I like seaborn's confusion matrix over sklearn's default
 
 
 
@@ -85,11 +65,12 @@ def get_features(file):
 #joblib.dump(model, 'modelo_mlp_entrenado.pkl')
 loaded_model = joblib.load('modelo_mlp_entrenado.pkl')
 
-audio_path_prueba = '/home/victor/Escritorio/tfg/tests/audios/WAV/prueba_fold/hora_rasp_45.wav'
+audio_path_prueba = '/home/victor/Escritorio/tfg/tests/audios/WAV/prueba_fold/delante_rasp_45-.wav'
 audio_prueba = get_features(audio_path_prueba)
 
 audio_prueba = audio_prueba.reshape(1, -1)
 
 # Predict with Random Forest
 prediccion = loaded_model.predict(audio_prueba)
-print(f'Clase predicha: {prediccion[0]}')
+#print(f'Clase predicha: {prediccion[0]}')
+print(prediccion[0])
