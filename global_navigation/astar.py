@@ -1,6 +1,7 @@
 import math
 import heapq
 import matplotlib.pyplot as plt
+import random
 
 # Define the Cell class
 class Cell:
@@ -11,9 +12,8 @@ class Cell:
         self.g = float('inf')  # Cost from start to this cell
         self.h = 0  # Heuristic cost from this cell to destination
 
-# Define the size of the grid
-ROW = 5
-COL = 7
+ROW = 0
+COL = 0
 
 # Check if a cell is valid (within the grid)
 def is_valid(row, col):
@@ -164,8 +164,23 @@ def visualize_grid(grid, path,src,dest):
     ax.grid(True)
     plt.savefig("astar.png")
 
+def load_image_from_text(file_path):
+    grid = []
+    with open(file_path, 'r') as file:
+        for line in file:
+            # Eliminar espacios en blanco al inicio y final de la línea
+            line = line.strip()
+            # Convertir cada carácter '0' o '1' a un entero 0 o 1
+            row = [int(char) for char in line]
+            # Agregar la fila a la lista principal (grid)
+            grid.append(row)
+    return grid
+
 def main():
+    global ROW
+    global COL
     # Define the grid (1 for unblocked, 0 for blocked)
+    '''
     grid = [
         [1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1],
@@ -173,10 +188,34 @@ def main():
         [1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 1]
     ]
+    '''
+    # Ejemplo de uso
+    file_path = '/home/victor/Escritorio/imagen_binaria.txt'  # Ruta a tu archivo de texto
+    grid = load_image_from_text(file_path)
+
+    ROW = len(grid)
+    COL = len(grid[0])
+    '''
+    # Number of obstacles to add
+    num_obstacles = 5
+
+    # Get the dimensions of the grid
+    rows = len(grid)
+    cols = len(grid[0])
+
+    # Add random obstacles
+    for _ in range(num_obstacles):
+        while True:
+            row = random.randint(0, rows - 1)
+            col = random.randint(0, cols - 1)
+            if grid[row][col] == 1:  # Only place obstacle if cell is unblocked
+                grid[row][col] = 0
+                break
+    '''
 
     # Define the source and destination
     src = [0, 0]
-    dest = [4, 6]
+    dest = [35, 35]
 
     # Run the A* search algorithm
     path = a_star_search(grid, src, dest)
