@@ -17,7 +17,7 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 
 [Controlador driver l298n](https://www.amazon.es/OcioDual-Controlador-Motores-Driver-Stepper/dp/B07YNR5KWP/ref=asc_df_B07YNR5KWP/?tag=googshopes-21&linkCode=df0&hvadid=699788246605&hvpos=&hvnetw=g&hvrand=7518927531183041364&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1005492&hvtargid=pla-1875528526707&psc=1&mcid=18ec99e215033d9bab88ec609c0d53ed&gad_source=1)
 
-[Rueda loca]([)](https://www.planetaelectronico.com/rueda-loca-para-robot-diy-p-16998.html)
+[Rueda loca](https://www.planetaelectronico.com/rueda-loca-para-robot-diy-p-16998.html)
 
 [Filamento PLA+ 1.75mm](https://www.amazon.es/SUNLU-PLA-3D-1-75mm-dimensional/dp/B07W47D4YZ/ref=sr_1_7?adgrpid=56241830615&dib=eyJ2IjoiMSJ9.g7hg6OyKWiLrTanEhk-fKywiKIyOsiKR45ynx-ZTt6r6zbl7amja3D1CtVccgyp-DLGewO5o4y5UaSDSiLOEP9YVyt5wZ2KMSE7lFJ6X2E_NZoHGe7bz33r0Q_iQH_wCeEBZhHDrooyH46gV14oGGYs3YH_goPcVtE8y-ekbCES2ojM8JPz5Ir-DnOyjfCGWTg6ieLfnH2yzscTeS7EHVxVWRNCIhz8EtJ2be_TVIU9Ql2PIqXyTJH4V9ogW1GjcUrAnALJs7PXWhNziALDGNUguiUv66gBt25NyGV8vDKQ.d5SL9a-RmHAiHKj83hFGjjMEGJok65WnPHJJnA4HVms&dib_tag=se&hvadid=685380943437&hvdev=c&hvlocphy=1005492&hvnetw=g&hvqmt=e&hvrand=8207918468773664201&hvtargid=kwd-320431463035&hydadcr=17380_2261118&keywords=plastico%2Bimpresora%2B3d&qid=1720372270&sr=8-7&th=1)
 
