@@ -14,6 +14,7 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 [Micrófono micro USB](https://www.amazon.es/gp/product/B08BHM9VVW/ref=ox_sc_act_title_1?smid=A19HXCV96LJNAY&psc=1)
 
 [Tarjeta micro SD](https://es.aliexpress.com/item/1005004635543631.html?src=google&src=google&albch=shopping&acnt=439-079-4345&slnk=&plac=&mtctp=&albbt=Google_7_shopping&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&albcp=18928172568&albag=&trgt=&crea=es1005004635543631&netw=x&device=c&albpg=&albpd=es1005004635543631&gclid=CjwKCAjwjaWoBhAmEiwAXz8DBYf6haE6xSgjybUdS7EWzRFEFk05sSMhARAr1vwOo0HNLKLyF9iLgBoCo6UQAvD_BwE&gclsrc=aw.ds&aff_fcid=3aec91ffbc8a497c9827789aa2d28dc9-1695144512619-01772-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=3aec91ffbc8a497c9827789aa2d28dc9-1695144512619-01772-UneMJZVf&terminal_id=30f772f43aff415480e751d9893a0371&afSmartRedirect=y)
+
 [Controlador driver l298n](https://www.amazon.es/OcioDual-Controlador-Motores-Driver-Stepper/dp/B07YNR5KWP/ref=asc_df_B07YNR5KWP/?tag=googshopes-21&linkCode=df0&hvadid=699788246605&hvpos=&hvnetw=g&hvrand=7518927531183041364&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1005492&hvtargid=pla-1875528526707&psc=1&mcid=18ec99e215033d9bab88ec609c0d53ed&gad_source=1)
 
 En cuanto al entorno de programación, la Raspberry tiene por defecto 
