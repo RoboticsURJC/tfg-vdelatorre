@@ -21,6 +21,8 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 
 [Filamento PLA+ 1.75mm](https://www.amazon.es/SUNLU-PLA-3D-1-75mm-dimensional/dp/B07W47D4YZ/ref=sr_1_7?adgrpid=56241830615&dib=eyJ2IjoiMSJ9.g7hg6OyKWiLrTanEhk-fKywiKIyOsiKR45ynx-ZTt6r6zbl7amja3D1CtVccgyp-DLGewO5o4y5UaSDSiLOEP9YVyt5wZ2KMSE7lFJ6X2E_NZoHGe7bz33r0Q_iQH_wCeEBZhHDrooyH46gV14oGGYs3YH_goPcVtE8y-ekbCES2ojM8JPz5Ir-DnOyjfCGWTg6ieLfnH2yzscTeS7EHVxVWRNCIhz8EtJ2be_TVIU9Ql2PIqXyTJH4V9ogW1GjcUrAnALJs7PXWhNziALDGNUguiUv66gBt25NyGV8vDKQ.d5SL9a-RmHAiHKj83hFGjjMEGJok65WnPHJJnA4HVms&dib_tag=se&hvadid=685380943437&hvdev=c&hvlocphy=1005492&hvnetw=g&hvqmt=e&hvrand=8207918468773664201&hvtargid=kwd-320431463035&hydadcr=17380_2261118&keywords=plastico%2Bimpresora%2B3d&qid=1720372270&sr=8-7&th=1)
 
+[Juntas tóricas](https://www.amazon.es/YIXISI-Arandela-Fontaner%C3%ADa-Reparaci%C3%B3n-Autom%C3%A1tica/dp/B0CH84CXLR/ref=sr_1_10?adgrpid=57792598018&dib=eyJ2IjoiMSJ9.5DSZqJ1a_z3CizwbUJMwmjdY7rZ0Spu_hJxaqDQJb7IkznjDk1okA6ZcevX5BdQPQ-kUjz0a0TKgTTuttdQ6fAvBqjDKmptNISyCbpmPFX6TlwE90U6FnFsjU1vpcmBaAYruyv9zBOF8_It_rRgJNV22ttEnbkbZ3OdnYRn9X2YyQN2BAfirFS0VLHkBJrLDVFddqk-cqqKFTCDgz2KjsLAcHJ6DeSy_QPN8-vEGVlGNCuYYVamVGu-hUR9JYf5leGwO0j258cED1Nk_OVzZ8pTmprq9Lnq80EgVtlNkCp0.ryBja1n-VQ7Rd7HtqbNFbKttwKLc8sMZj2oYGdj4ZMI&dib_tag=se&hvadid=275478091626&hvdev=c&hvlocphy=1005492&hvnetw=g&hvqmt=e&hvrand=11040862232827926902&hvtargid=kwd-295574459246&hydadcr=14553_1815238&keywords=juntas+toricas&qid=1720372579&sr=8-10)
+
 En cuanto al entorno de programación, la Raspberry tiene por defecto 
 instalado Thonny Python IDE el cual es para proyectos más simples y tiene menos
 capacidades que Python 3(IDLE), el cual es más conveniente para este tipo de 
