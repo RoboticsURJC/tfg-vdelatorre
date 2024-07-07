@@ -23,6 +23,8 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 
 [Juntas tóricas](https://www.amazon.es/YIXISI-Arandela-Fontaner%C3%ADa-Reparaci%C3%B3n-Autom%C3%A1tica/dp/B0CH84CXLR/ref=sr_1_10?adgrpid=57792598018&dib=eyJ2IjoiMSJ9.5DSZqJ1a_z3CizwbUJMwmjdY7rZ0Spu_hJxaqDQJb7IkznjDk1okA6ZcevX5BdQPQ-kUjz0a0TKgTTuttdQ6fAvBqjDKmptNISyCbpmPFX6TlwE90U6FnFsjU1vpcmBaAYruyv9zBOF8_It_rRgJNV22ttEnbkbZ3OdnYRn9X2YyQN2BAfirFS0VLHkBJrLDVFddqk-cqqKFTCDgz2KjsLAcHJ6DeSy_QPN8-vEGVlGNCuYYVamVGu-hUR9JYf5leGwO0j258cED1Nk_OVzZ8pTmprq9Lnq80EgVtlNkCp0.ryBja1n-VQ7Rd7HtqbNFbKttwKLc8sMZj2oYGdj4ZMI&dib_tag=se&hvadid=275478091626&hvdev=c&hvlocphy=1005492&hvnetw=g&hvqmt=e&hvrand=11040862232827926902&hvtargid=kwd-295574459246&hydadcr=14553_1815238&keywords=juntas+toricas&qid=1720372579&sr=8-10)
 
+Batería 6V
+
 En cuanto al entorno de programación, la Raspberry tiene por defecto 
 instalado Thonny Python IDE el cual es para proyectos más simples y tiene menos
 capacidades que Python 3(IDLE), el cual es más conveniente para este tipo de 
