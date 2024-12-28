@@ -9,7 +9,6 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 ## Material necesario:
 
 [Raspberry PI 4 modelo B](https://www.amazon.es/Raspberry-Modelo-Cortex-A72-1-50GHz-Bluetooth/dp/B0CJ4XHZ4G/ref=sr_1_1_sspa?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2PC3BKPDGNP9T&dib=eyJ2IjoiMSJ9.JC3sH7yAJO39e093s-s2MB6--RiRzs-pjKdtN28bw4srryrt8yXVd_wlzPO6hZgCq65K9AIH0sEG8kIDFgwSwnUxb_3y7JMFhehZRV-qRK4q7s-8fuFh4BpcBpOn1te7EJRr5AVPRmkBUKH2ti3ZGQohnMS5g0jRL4OfybnpCzHtRZgkbL3BvtNnmg6A5q_bO4v8Zi9Tdfq2Zysh5MiLonG4nbrQSjwAGCp623wJUGLhmTqBmGMq7fRzUz901oXxqFyWpDAWdAaHiye8vOZ3lhnQlDJQ0a11zAcqKcjIi5Q.MRYY3SQNXola7rxlXhBrxfLWnvFT1A1Et7W2cSlP5Eo&dib_tag=se&keywords=RASPBERRY+PI+4&qid=1720372489&s=computers&sprefix=raspberry+pi+4%2Ccomputers%2C125&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)  
-[Tarjeta de sonido USB](https://www.amazon.es/dp/B00DHD8PPE?ref=ppx_yo2ov_dt_b_product_details&th=1)
 
 [Micrófono micro USB](https://www.amazon.es/gp/product/B08BHM9VVW/ref=ox_sc_act_title_1?smid=A19HXCV96LJNAY&psc=1)
 
