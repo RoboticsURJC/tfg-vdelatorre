@@ -26,6 +26,8 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 
 [Power Bank](https://www.amazon.es/SLuB-12000mAh-Bateria-Pantalla-Alimentaci%C3%B3n/dp/B0B4RWNZY3?th=1)
 
+[Ruedas y motores reductores](https://www.amazon.es/HeyNana-Ruedas-Motores-Reductor-Coche/dp/B07LDP1DP9?th=1)
+
 En cuanto al entorno de programación, la Raspberry tiene por defecto 
 instalado Thonny Python IDE el cual es para proyectos más simples y tiene menos
 capacidades que Python 3(IDLE), el cual es más conveniente para este tipo de 
