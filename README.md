@@ -24,6 +24,8 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 
 [Batería recargable](https://www.amazon.es/Gecoty%C2%AE-Bater%C3%ADa-recargable-2400mAh-Conector/dp/B091232MQT/ref=asc_df_B091232MQT?mcid=3824920af077376bb9c016f114144a16&tag=googshopes-21&linkCode=df0&hvadid=699849219014&hvpos=&hvnetw=g&hvrand=9518630481831981493&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9217611&hvtargid=pla-1238453398530&psc=1&gad_source=1)
 
+[Power Bank](https://www.amazon.es/SLuB-12000mAh-Bateria-Pantalla-Alimentaci%C3%B3n/dp/B0B4RWNZY3?th=1)
+
 En cuanto al entorno de programación, la Raspberry tiene por defecto 
 instalado Thonny Python IDE el cual es para proyectos más simples y tiene menos
 capacidades que Python 3(IDLE), el cual es más conveniente para este tipo de 
