@@ -1,10 +1,8 @@
 # Repositorio de trabajo del TFG
 # Víctor de la Torre Rosa
 
-Como primera idea, este TFG estará enfocado a domotizar una vivienda
-gracias al uso de una raspberry mediante reconocimiento por voz y facial, por lo
-que este asistente a parte de poder comunicarte con él,otorgará mayor seguridad 
-a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
+Como primera idea, este TFG estará enfocado a diseñar un prototipo de un
+robot que pueda localizarse en interiores y que sea controlado por comandos por voz con el uso de una raspberry a un coste relativamente bajo.
 
 ## Material necesario:
 
