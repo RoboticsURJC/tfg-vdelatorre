@@ -23,7 +23,7 @@ a cualquier tipo de datos que se deseen guardar y a un coste relativamente bajo.
 
 [Magnetómetro mpu9250](https://es.aliexpress.com/item/1005006375372078.html?srcSns=sns_WhatsApp&spreadType=socialShare&bizType=ProductDetail&social_params=60926151217&aff_fcid=5bbd7695bc3f47c398213b0bed5873e6-1735402955029-08760-_EyAmNQg&tt=MG&aff_fsk=_EyAmNQg&shareId=60926151217&businessType=ProductDetail&platform=AE&afSmartRedirect=y&dp=2b4b860b-a2f0-4fb5-9d5d-62c82218616f&af=5f979ce5d915b86bee3f7002&aff_fcid=31461b21089e46b8bbf699b774adaa52-1735402961832-00360-_onukj0T&aff_fsk=_onukj0T&aff_platform=api-new-link-generate&sk=_onukj0T&aff_trace_key=31461b21089e46b8bbf699b774adaa52-1735402961832-00360-_onukj0T&terminal_id=30f772f43aff415480e751d9893a0371&afSmartRedirect=y)
 
-Batería 6V
+[Batería recargable](https://www.amazon.es/Gecoty%C2%AE-Bater%C3%ADa-recargable-2400mAh-Conector/dp/B091232MQT/ref=asc_df_B091232MQT?mcid=3824920af077376bb9c016f114144a16&tag=googshopes-21&linkCode=df0&hvadid=699849219014&hvpos=&hvnetw=g&hvrand=9518630481831981493&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9217611&hvtargid=pla-1238453398530&psc=1&gad_source=1)
 
 En cuanto al entorno de programación, la Raspberry tiene por defecto 
 instalado Thonny Python IDE el cual es para proyectos más simples y tiene menos
