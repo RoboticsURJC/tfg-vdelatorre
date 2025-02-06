@@ -1,0 +1,97 @@
+\chapter{Objetivos}
+\label{cap:capitulo3}
+
+\begin{flushright}
+\begin{minipage}[]{10cm}
+\emph{La proactividad es la clave para el éxito}\\
+\end{minipage}\\
+
+Stephen R. Covey, \textit{Los 7 hábitos de la gente altamente efectiva}\\
+\end{flushright}
+
+\vspace{1cm}
+
+En el capítulo anterior se ha revisado el estado del arte correspondiente a este trabajo. A continuación se presentará el plan de trabajo, definiendo los 
+objetivos que se han marcado, tanto específicos como generales, para poder desarrollar este proyecto, y los requisitos necesarios para el mismo.
+Finalmente, se explicará la metodología que se ha seguido para poder cumplir los objetivos propuestos.\\
+
+
+
+\section{Descripción del problema}
+\label{sec:descripcion}
+
+\vspace{0.7cm}
+El objetivo general de este proyecto es el desarrollo y diseño de un prototipo de robot guía de bajo coste, con el fin de ofrecer una solución más accesible y asequible frente a los robots guía convencionales, los cuales son generalmente caros y difíciles de adaptar a diferentes entornos debido a todos los cambios que serían necesarios a nivel de software. Este robot mediante una interfaz HRI amigable, usará comandos de voz para poder comunicarte con él para guiar a las personas en espacios interiores. A diferencia de las soluciones existentes, que utilizan materiales costosos y sensores avanzados, este prototipo utilizará una CPU de baja capacidad de cómputo como la Raspberry Pi y técnicas avanzadas de localización interna  junto con algoritmos de navegación. Asimismo, se busca que el sistema creado sea portable para la mayoría de entornos en interiores de la manera más asequible posible sin necesidad de 
+tener una complejidad mayor en otros entornos a la hora de programarlo y que sea capaz de poder orientarse y localizarse en el mapa mediante diferentes sensores y actuadores hasta llevar a la persona a un punto en concreto. Esto proporciona una opción más económica, práctica y versátil para la navegación en interiores.\\ 
+
+Para cumplir con el objetivo general establecido, será necesario establecer los siguientes objetivos específicos:
+
+
+\begin{enumerate}
+ \item Explorar diferentes opciones de diseño para determinar la forma final del robot.
+ \item Realizar una investigación sobre los distintos componentes tanto hardware como software que hay disponibles en el mercado que sean 
+de bajo coste y que satisfagan las tareas de localización y movimiento del robot.
+ \item Desarrollar el software necesario para poder gestionar el control del prototipo desde el ordenador sin necesidad de cables intermedios.
+ \item Uso de \hyperlink{CAD}{CAD} para el diseño de piezas 3D mediante el uso de software libre, como FreeCAD.
+ \item Hacer uso de una impresora 3D para poder materializar las piezas necesarias. 
+ \item Poder combinar todos los datos de navegación y localización sin que intervengan unos con otros mediante la librería threading que permite el control y la ejecución de diferentes hilos  ejecutados en paralelo.
+ \item Realizar la calibración necesaria de los sensores para asegurar la precisión de las lecturas y que sea fiable.
+ \item Entrenar una red neuronal con diferentes audios por voz para enseñar a la red a clasificar e interpretar las órdenes dadas por el usuario para
+ que te guíe a un sitio específico dependiendo de la orden dada por voz.
+\end{enumerate}\
+
+
+\section{Requisitos}
+\label{sec:requisitos}
+
+Con el objetivo de solucionar los problemas descritos, se han establecido los siguientes requisitos:
+
+\begin{itemize}
+ \item \textit{} El sistema propuesto deberá de ser capaz de poder ejecutarse en tiempo real en la plataforma Raspberry Pi 4B.
+ \item \textit{} Python será el lenguaje de programación usado porque es fácil de usar, a parte de contar con una amplia gama de bibliotecas 
+ y librerías útiles para este proyecto y tener soporte completo en el sistema operativo de la Raspberry Pi 4B.
+ \item \textit{} El diseño y la fabricación de este prototipo no debe suponer un coste mayor a 145 \euro.
+ \item \textit{} Las piezas que se usen para el diseño del robot deben ser imprimibles en cualquier impresora 3D actual.
+ \item \textit{} Debe ser capaz de desplazarse sin problemas por la mayoría de suelos que hay en entornos interiores.
+ \item \textit{} Es necesario que esté fabricado con el menor número de piezas posibles en 3D debido a alto tiempo que tardan en imprimirse algunas
+ con el objetivo de que el usuario lo pueda montar en poco tiempo.
+ \item \textit{} Contar con varios APs para que el robot se pueda localizar, por lo que mínimo con 3 valdría aunque depende de las interferencias que haya en los distintos entornos puede que se necesiten más.
+ \item \textit{} Los motores y la batería deben de pesar lo menos posible, ya que a parte irán incorporadas la Power Bank y la Raspberry encima y a su vez deben proporcionar la potencia necesaria para mover todo el hardware sin problemas.
+ \item \textit{} La batería debe ser recargable para que pueda usarse el robot todas las veces que se quiera y que dure lo máximo posible.
+ 
+\end{itemize}\
+
+ 
+\section{Metodología}
+\label{sec:metodologia}
+
+Con el fin de alcanzar los objetivos propuestos, se han utilizado distintas herramientas para poder desarrollar el proyecto correctamente y
+hacer un control y seguimiento del mismo.\\
+
+A través de la aplicación Microsoft Teams se han organizado tutorías semanales con el tutor del trabajo para hacer un seguimiento del proyecto. En estas reuniones se comentaban los problemas que iban surgiendo a lo largo de la semana y las posibles soluciones que se podían tomar para avanzar correctamente, además de la evaluación y el control de los objetivos que se habían marcado la semana anterior y establecer los nuevos objetivos y planteamientos de cara a la próxima semana. Por otra parte, se ha utilizado también el correo electrónico para comentar con el tutor las dudas y problemas que han ido surgiendo a lo largo de la semana.\\ 
+
+Para mantener el código y exponer los avances de este proyecto, se ha usado un repositorio de GitHub\footnote{\url{https://github.com/RoboticsURJC/tfg-vdelatorre}} en el cual se ha ido subiendo todo el código necesario y los diferentes recursos empleados, así como imágenes, piezas, audios, artículos, etc. Al mismo tiempo, se ha diseñado una Wiki\footnote{\url{https://github.com/RoboticsURJC/tfg-vdelatorre/wiki}} en el mismo repositorio que incluye todo el proceso que se ha ido siguiendo paso a paso, junto con los diferentes problemas que han ido surgiendo y las soluciones empleadas, e imágenes y vídeos para demostrar todos los experimentos realizados y el comportamiento final del prototipo.
+
+\section{Plan de trabajo}
+\label{sec:plantrabajo}
+
+El desarrollo completo de este proyecto se ha dividido en las siguientes etapas:
+
+\begin{enumerate}
+ \item \textit{Investigación del hardware utilizado.} El periodo de septiembre a octubre de 2023, se dedicó al aprendizaje del funcionamiento de los diferentes sensores, para poder trabajar con la Raspberry a través de comandos por voz y una red neuronal entrenada para ello.
+
+ \item \textit{Investigación del estado del arte.} En el periodo de octubre a noviembre de 2023, se hizo una investigación en diferentes plataformas, como Google Scholar, sobre artículos relacionados con el funcionamiento de la idea descrita y la compatibilidad y si era viable o no el proyecto.
+ 
+  \item \textit{Ampliación del dataset.} En el periodo de noviembre a enero se estuvo ampliando el dataset de audios con diferentes voces y comandos para ver si era viable a largo plazo y si era escalable o no, para comprobar si era compatible con diferentes tipos de voces.
+  
+  \item \textit{Pruebas con motores.} En el periodo de diciembre hasta abril, se estuvo probando y analizando los motores más potentes, de menor coste y de menor peso de los que se disponía, y al mismo tiempo se estuvo diseñando las piezas para anclarlas robot y pensando en la estructura final para poder combinar todos los componentes. Estas piezas, una vez fueron diseñadas por ordenador en FreeCAD\footnote{\url{https://www.freecad.org/index.php?lang=es_ES}}, fueron impresas en 3D haciendo uso de una impresora de filamento de tipo \hyperlink{FDM}{FDM} y probadas una a una para ver si eran compatibles con los motores y disponían de la sujeción necesaria para que el robot pudiera desplazarse correctamente.
+  
+ \item \textit{Desarrollo de software.} Una vez montado el robot, en el periodo de abril hasta junio, se trasladó toda la red neuronal y el modelo del software probado ya con éxito en un sistema operativo Ubuntu a una Raspberry Pi probando las diferentes versiones, paquetes y librerías para que todo funcionase correctamente y se realizó una investigación acerca de qué modelo de Raspberry usar para soportar todo el cómputo necesario.
+ 
+  \item \textit{Conexión VPN Raspberry Pi.} Para poder controlar el robot de manera independiente, en el periodo de junio hasta julio, se probó y se configuró el programa VNC Server en la Raspberry para no necesitar cables de conexión y el robot se pudiera mover libremente mientras es programado desde el ordenador.
+  
+ \item \textit{Navegación.} Para poder controlar el robot de manera independiente, en el periodo de julio hasta diciembre, una vez diseñado el robot y probado con ambos motores, se hizo una investigación acerca de la navegación y los posibles algoritmos necesarios para trazar la ruta óptima de un punto a otro. Por otra parte, se usó la herramienta de software libre \hyperlink{GIMP}{GIMP} para diseñar el mapa del robot en el que este va a navegar y también se exploraron las diferentes técnicas de navegación y localización.
+ 
+   \item \textit{Pruebas del software desarrollado y escritura de la memoria.} En el periodo de enero hasta marzo de 2025, se realizaron todas las pruebas y cambios necesarios para que el robot cumpliera el objetivo y al mismo tiempo se fue elaborando el presente documento.
+\end{enumerate}\
+
