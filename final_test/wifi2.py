@@ -114,7 +114,7 @@ def robot_position():
       
 
 
-    coords_list = [(-1 * n, 2 * n),(1 * n, 1 * n),(-2 * n, 0 * n),(0 * n, 1 * n)]
+    coords_list = [(3 * n, 0 * n),(10 * n, 5 * n),(-3 * n, 1 * n),(-13 * n, 10 * n)]
 
     #elimina los valores None si los hubiese
     valid_distances = list(filter(None, distances))
